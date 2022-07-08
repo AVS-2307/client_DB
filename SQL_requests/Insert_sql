@@ -1,0 +1,40 @@
+INSERT INTO musicians(musician_name)
+VALUES('SCOOTER'), ('Sub zero project'), ('ДДТ'), ('Ногу свело'), ('NoizeMC'), ('Da Tweekaz'),('Порнофильмы'),('Макс Барских');
+
+INSERT INTO genres(genre)
+VALUES('Techno'), ('Hardstyle'), ('Rock'), ('RAP'), ('POP');
+
+INSERT INTO musiciansgenres(musician_id, genre_id)
+VALUES(1, 1), (2, 2), (3, 3), (4, 3), (5, 4), (6, 2), (7, 3), (8, 5);
+
+INSERT INTO albums(album_name, issue_date)
+VALUES('Sheffield', 2000), ('Contagion', 2019), ('Метель августа', 2000), ('Хару Мамбуру', 1993), ('Выход в город', 2021), ('Legends of the Elite', 2022), ('Это пройдет', 2020), ('Туманы', 2018);
+
+--DELETE FROM albums
+--WHERE id >= 1;
+
+INSERT INTO musiciansalbums (musician_id, album_id)
+VALUES(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (7, 7), (8, 8);
+
+INSERT INTO tracks (track_name, duration, album_id)
+VALUES('She’s The Sun', '4:54', 1), ('Summer Wine', '3:58', 1), ('Patient Zero', '4:08', 2), ('Breack the Game', '4:11', 2), ('Московская барыня', '3:23', 3), ('Новое сердце', '4:46', 3), ('Поколение Z', '3:33', 4), ('Назад, Россия', '3:32', 4), ('Всё как у людей', '4:17', 5), ('На Марсе классно!', '4:05', 5),
+	('Wodka', '5:22', 6), ('Illumination', '3:22', 6), ('Это пройдет', '3:56', 7), ('Дядя Володя', '3:12', 7), ('Туманы', '3:26', 8), ('Буде весна', '1:39', 8), ('My Gabber', '2:41', 1);
+
+
+
+--DELETE FROM tracks
+--WHERE id >= 17;
+
+INSERT INTO compilations (compilation_name, issue_date)
+VALUES('Essential selection-1', 2014), ('Essential selection-1', 2014),
+	('Essential selection-2', 2015), ('Essential selection-1', 2014),
+	('Essential selection-3', 2019), ('Essential selection-1', 2019),
+('Essential selection-4', 2020), ('Essential selection-4', 2020),
+('Essential selection-5', 2018), ('Essential selection-4', 2018),
+('Сладкая вата-1', 2021), ('Сладкая вата-1', 2021),
+('Сладкая вата-2', 2022), ('Сладкая вата-2', 2022),
+('Сладкая вата-3', 2022), ('Сладкая вата-2', 2022)
+
+INSERT INTO compilationstracks (compilation_id , track_id)
+VALUES(1, 1), (1, 6), (2, 2), (2, 5), (3, 4), (3, 12), (4, 14),
+    (4, 3), (5, 11), (5, 15), (6, 9), (6, 13), (7, 7), (7, 10), (8, 8), (8, 16)
