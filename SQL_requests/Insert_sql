@@ -26,14 +26,17 @@ VALUES('She’s The Sun', '4:54', 1), ('Summer Wine', '3:58', 1), ('Patient Zero
 --WHERE id >= 17;
 
 INSERT INTO compilations (compilation_name, issue_date)
-VALUES('Essential selection-1', 2014), ('Essential selection-1', 2014),
-	('Essential selection-2', 2015), ('Essential selection-1', 2014),
-	('Essential selection-3', 2019), ('Essential selection-1', 2019),
-('Essential selection-4', 2020), ('Essential selection-4', 2020),
-('Essential selection-5', 2018), ('Essential selection-4', 2018),
-('Сладкая вата-1', 2021), ('Сладкая вата-1', 2021),
-('Сладкая вата-2', 2022), ('Сладкая вата-2', 2022),
-('Сладкая вата-3', 2022), ('Сладкая вата-2', 2022)
+VALUES('Essential selection-1', 2014),
+	('Essential selection-2', 2015),
+	('Essential selection-3', 2019),
+('Essential selection-4', 2020),
+('Essential selection-5', 2018),
+('Сладкая вата-1', 2021),
+('Сладкая вата-2', 2022),
+('Сладкая вата-3', 2022)
+
+
+
 
 INSERT INTO compilationstracks (compilation_id , track_id)
 VALUES(1, 1), (1, 6), (2, 2), (2, 5), (3, 4), (3, 12), (4, 14),
