@@ -16,11 +16,12 @@ VALUES('Sheffield', 2000), ('Contagion', 2019), ('Метель августа', 
 INSERT INTO musiciansalbums (musician_id, album_id)
 VALUES(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (7, 7), (8, 8);
 
-INSERT INTO tracks (track_name, duration, album_id)
-VALUES('She’s The Sun', '4:54', 1), ('Summer Wine', '3:58', 1), ('Patient Zero', '4:08', 2), ('Breack the Game', '4:11', 2), ('Московская барыня', '3:23', 3), ('Новое сердце', '4:46', 3), ('Поколение Z', '3:33', 4), ('Назад, Россия', '3:32', 4), ('Всё как у людей', '4:17', 5), ('На Марсе классно!', '4:05', 5),
-	('Wodka', '5:22', 6), ('Illumination', '3:22', 6), ('Это пройдет', '3:56', 7), ('Дядя Володя', '3:12', 7), ('Туманы', '3:26', 8), ('Буде весна', '1:39', 8), ('My Gabber', '2:41', 1);
+INSERT INTO tracks (track_name, duration, duration_sec, album_id)
+VALUES('She’s The Sun', '4:54', 294, 1), ('Summer Wine', '3:58', 238, 1), ('Patient Zero', '4:08', 248, 2), ('Breack the Game', '4:11', 251, 2), ('Московская барыня', '3:23', 203, 3), ('Новое сердце', '4:46', 286, 3), ('Поколение Z', '3:33', 213, 4), ('Назад, Россия', '3:32', 212, 4), ('Всё как у людей', '4:17', 257, 5), ('На Марсе классно!', '4:05', 245, 5),
+	('Wodka', '5:22', 322, 6), ('Illumination', '3:22', 202, 6), ('Это пройдет', '3:56', 236, 7), ('Дядя Володя', '3:12', 192, 7), ('Туманы', '3:26', 206, 8), ('Буде весна', '1:39', 99, 8), ('My Gabber', '2:41', 161, 1);
 
-
+INSERT INTO tracks (track_name, duration, duration_sec, album_id)
+VALUES('COMON', '3:30', 210, 6)
 
 --DELETE FROM tracks
 --WHERE id >= 17;
@@ -34,8 +35,6 @@ VALUES('Essential selection-1', 2014),
 ('Сладкая вата-1', 2021),
 ('Сладкая вата-2', 2022),
 ('Сладкая вата-3', 2022)
-
-
 
 
 INSERT INTO compilationstracks (compilation_id , track_id)
