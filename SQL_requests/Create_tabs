@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS Tracks (
 id SERIAL primary KEY,
 Track_name VARCHAR(80) NOT NULL,
 Duration VARCHAR(80) NOT NULL,
+Duration_sec INTEGER NOT NULL,
 Album_id INTEGER REFERENCES Albums(id)
 );
 
