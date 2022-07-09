@@ -12,6 +12,10 @@ VALUES('Sheffield', 2000), ('Contagion', 2019), ('Метель августа', 
 	('Хару Мамбуру', 1993), ('Выход в город', 2021), ('Legends of the Elite', 2022),
 	('Это пройдет', 2020), ('Туманы', 2018);
 
+--добавляю альбом с минимумом трэков
+INSERT INTO albums(album_name, issue_date)
+VALUES('Minimum', 1993)
+
 --DELETE FROM albums
 --WHERE id >= 1;
 
@@ -25,6 +29,11 @@ VALUES('She’s The Sun', '4:54', 294, 1), ('Summer Wine', '3:58', 238, 1), ('Pa
 --добавлен трэк, который не входит в сборник
 INSERT INTO tracks (track_name, duration, duration_sec, album_id)
 VALUES('COMON', '3:30', 210, 6);
+
+--добавляю трэк для альбома "Минимум"
+INSERT INTO tracks (track_name, duration, duration_sec, album_id)
+VALUES('Minimorum', '3:30', 210, 9);
+
 
 --DELETE FROM tracks
 --WHERE id >= 17;
