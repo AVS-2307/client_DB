@@ -1,8 +1,0 @@
--- руководители тоже являются сотрудниками и поэтому их логично хранить в таблице сотрудников;
--- при этом можно было прямо в ней полю начальников ссылаться на поле id сотрудников самой этой же таблицы;
-CREATE TABLE IF NOT EXISTS Employees2 (
-	id SERIAL PRIMARY KEY,
-	Employee2_name VARCHAR(60) NOT NULL,
-	Departmment VARCHAR(60) NOT NULL,
-	boss_name INTEGER NOT NULL REFERENCES Employees2(id)
-)
