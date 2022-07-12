@@ -199,4 +199,4 @@ with conn.cursor() as cur:
 #     else:
 #         print('Введен неверный вариант')
 #
-# conn.close()
+conn.close()
