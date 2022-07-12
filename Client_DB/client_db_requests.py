@@ -9,6 +9,8 @@ with conn.cursor() as cur:
         cur.execute("""
         DROP TABLE clients, phones CASCADE;
         """)
+        print('Таблицы "Clients" и "Phones" удалены')
+        conn.commit()
 
 
     delete_tables()
@@ -24,6 +26,8 @@ with conn.cursor() as cur:
         email VARCHAR(40) NOT NULL
         );
         """)
+        print('Таблица "Clients" создана')
+        conn.commit()
 
         cur.execute("""
         CREATE TABLE IF NOT EXISTS phones(
@@ -32,6 +36,7 @@ with conn.cursor() as cur:
         client_id INTEGER NOT NULL REFERENCES clients(id)
         );
         """)
+        print('Таблица "Phones" создана')
         conn.commit()
 
 
